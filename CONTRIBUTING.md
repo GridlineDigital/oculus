@@ -8,7 +8,7 @@ Thank you for your interest in contributing to Oculus! We welcome contributions 
 
 - **Rust**: Install from [rustup.rs](https://rustup.rs/).
 - **Node.js / Bun**: This project uses [Bun](https://bun.sh/) as the package manager.
-- **Tauri CLI**: Install via `cargo install tauri-cli` or use the bundled CLI.
+- **Tauri CLI**: The project uses the local Tauri CLI via `bun tauri`.
 
 ### Installation
 
@@ -41,7 +41,7 @@ Thank you for your interest in contributing to Oculus! We welcome contributions 
 
 ## Code Style
 
-- **Frontend**: We use Prettier for code formatting. Run `bun format` to format your code.
+- **Type Checking**: Run `bun check` to verify TypeScript types.
 - **Styling**: Use the semantic theme classes defined in `src/app.css` (e.g., `bg-glass`, `text-text-secondary`) instead of hardcoded colors.
 - **Backend**: We use `rustfmt`. Run `cargo fmt` in the `src-tauri` directory.
 
