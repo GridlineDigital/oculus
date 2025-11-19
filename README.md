@@ -1,10 +1,10 @@
 # Oculus
 
-Oculus is a premium desktop controller for LIFX lights, built with Tauri, SvelteKit, and Rust. Inspired by the architectural marvel of the World Trade Center Oculus, it provides a sleek, modern interface for managing your smart lights and activating scenes.
+Oculus is a desktop controller for LIFX lights, built with Tauri, SvelteKit, and Rust. Inspired by the architectural marvel of the World Trade Center Oculus, it provides a sleek, modern interface for managing your smart lights and activating scenes.
 
 ## Features
 
-- **Premium Glassmorphic UI**: A stunning, dark-mode interface with dynamic lighting effects and frosted glass elements.
+- **Glassmorphic UI**: A stunning, dark-mode interface with dynamic lighting effects and frosted glass elements.
 - **Interactive Dashboard**:
   - **Global Control**: Master switch to toggle all lights instantly.
   - **Live Status**: "Mini Orbs" on each card show real-time color and brightness.
