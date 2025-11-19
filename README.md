@@ -1,6 +1,6 @@
-# Light Effects
+# Oculus
 
-Light Effects is a desktop application for controlling LIFX lights, built with Tauri, SvelteKit, and Rust. It provides a sleek, modern interface for managing your smart lights and activating scenes.
+Oculus is a premium desktop controller for LIFX lights, built with Tauri, SvelteKit, and Rust. Inspired by the architectural marvel of the World Trade Center Oculus, it provides a sleek, modern interface for managing your smart lights and activating scenes.
 
 ## Features
 

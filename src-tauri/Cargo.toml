@@ -1,7 +1,7 @@
 [package]
-name = "tauri-applight-effects"
+name = "oculus-app"
 version = "0.1.0"
-description = "A desktop application for controlling LIFX lights"
+description = "Oculus: A premium desktop controller for LIFX lights"
 authors = ["Ethan"]
 edition = "2021"
 

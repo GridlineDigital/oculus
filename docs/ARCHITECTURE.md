@@ -1,10 +1,10 @@
 # Architecture Overview
 
-This document provides a high-level overview of the Light Effects application architecture.
+This document provides a high-level overview of the Oculus application architecture.
 
 ## System Design
 
-Light Effects is a desktop application built using [Tauri](https://tauri.app/), which combines a Rust backend with a web-based frontend.
+Oculus is a desktop application built using [Tauri](https://tauri.app/), which combines a Rust backend with a web-based frontend.
 
 ### Tech Stack
 

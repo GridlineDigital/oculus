@@ -1,7 +1,7 @@
 {
-  "name": "tauri-applight-effects",
+  "name": "oculus-lights",
   "version": "0.1.0",
-  "description": "A desktop application for controlling LIFX lights, built with Tauri, SvelteKit, and Rust.",
+  "description": "Oculus: A premium desktop controller for LIFX lights.",
   "author": "Ethan",
   "type": "module",
   "scripts": {

@@ -60,7 +60,9 @@
                     /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg
                 >
             </div>
-            <h1 class="text-2xl font-bold text-white mb-2">Connect to LIFX</h1>
+            <h1 class="text-2xl font-bold text-white mb-2">
+                Welcome to Oculus
+            </h1>
             <p class="text-text-secondary text-sm">
                 Enter your LIFX API token to begin.
             </p>

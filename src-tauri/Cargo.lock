@@ -2604,6 +2604,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "oculus-app"
+version = "0.1.0"
+dependencies = [
+ "keyring",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-log",
+ "tauri-plugin-opener",
+ "tauri-plugin-store",
+]
+
+[[package]]
 name = "once_cell"
 version = "1.21.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4102,21 +4117,6 @@ dependencies = [
  "webview2-com",
  "window-vibrancy",
  "windows",
-]
-
-[[package]]
-name = "tauri-applight-effects"
-version = "0.1.0"
-dependencies = [
- "keyring",
- "reqwest",
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
- "tauri-plugin-log",
- "tauri-plugin-opener",
- "tauri-plugin-store",
 ]
 
 [[package]]
