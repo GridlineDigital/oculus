@@ -77,7 +77,6 @@ Before you begin, ensure you have the following installed:
 - **Frontend**: [Svelte 5](https://svelte.dev/), [Tailwind CSS 4](https://tailwindcss.com/)
 - **Backend**: [Rust](https://www.rust-lang.org/), [Tauri 2](https://tauri.app/)
 - **Runtime**: [Bun 1.3](https://bun.sh/)
-- **Database**: [Neon DB](https://neon.tech/) (Serverless Postgres)
 
 ## Building for Production
 
