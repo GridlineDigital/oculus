@@ -8,7 +8,14 @@ class LightState {
     error = $state<string | null>(null);
 
     async refresh() {
-        this.loading = true;
+        // Only show loading state if we have no data
+        // Otherwise, fetch silently in the background
+        const shouldShowLoading = this.lights.length === 0;
+        
+        if (shouldShowLoading) {
+            this.loading = true;
+        }
+        
         this.error = null;
         try {
             const [lightsData, scenesData] = await Promise.all([
@@ -22,7 +29,9 @@ class LightState {
             console.error("Failed to refresh data:", e);
             this.error = "Failed to load data";
         } finally {
-            this.loading = false;
+            if (shouldShowLoading) {
+                this.loading = false;
+            }
         }
     }
 

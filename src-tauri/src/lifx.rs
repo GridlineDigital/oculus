@@ -66,7 +66,7 @@ impl LifxState {
         }
 
         // Update keyring
-        let entry = Entry::new("tauri-applight-effects", "lifx_api_token")?;
+        let entry = Entry::new("tauri-app-oculus", "lifx_api_token")?;
         if token.is_empty() {
             entry.delete_credential()?;
         } else {
@@ -79,6 +79,10 @@ impl LifxState {
     fn validate_selector(selector: &str) -> Result<(), Box<dyn Error>> {
         // Basic validation: allow 'all', 'id:...', 'group:...', 'location:...'
         if selector == "all" {
+            return Ok(());
+        }
+        // Allow raw alphanumeric IDs (e.g. "d073d52ca593")
+        if selector.chars().all(|c| c.is_alphanumeric()) {
             return Ok(());
         }
         if selector.starts_with("id:")
@@ -207,7 +211,7 @@ impl LifxState {
         }
 
         // 2. Try keyring
-        let entry = Entry::new("tauri-applight-effects", "lifx_api_token")?;
+        let entry = Entry::new("tauri-app-oculus", "lifx_api_token")?;
         match entry.get_password() {
             Ok(token) => {
                 // Update cache
