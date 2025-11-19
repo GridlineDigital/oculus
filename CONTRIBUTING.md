@@ -1,6 +1,6 @@
-# Contributing to Light Effects
+# Contributing to Oculus
 
-Thank you for your interest in contributing to Light Effects! We welcome contributions from the community.
+Thank you for your interest in contributing to Oculus! We welcome contributions from the community.
 
 ## Development Setup
 
@@ -15,8 +15,8 @@ Thank you for your interest in contributing to Light Effects! We welcome contrib
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/light-effects.git
-    cd light-effects
+    git clone https://github.com/GridlineDigital/oculus.git
+    cd oculus
     ```
 
 2. **Install dependencies**:
