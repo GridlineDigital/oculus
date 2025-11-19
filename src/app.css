@@ -31,6 +31,13 @@
     /* text-white/30 */
 }
 
+@layer base {
+    html,
+    body {
+        background-color: var(--color-surface);
+    }
+}
+
 @layer utilities {
     .custom-scrollbar::-webkit-scrollbar {
         width: 8px;
