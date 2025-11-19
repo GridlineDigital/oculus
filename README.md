@@ -6,7 +6,7 @@
 ![Rust](https://img.shields.io/badge/rust-stable-black.svg)
 ![Bun](https://img.shields.io/badge/bun-v1.3-white.svg)
 
-Oculus is a desktop controller for LIFX lights, built with Tauri, Svelte, and Rust. Inspired by the World Trade Center Oculus, it provides a sleek, modern interface for managing your smart lights and activating scenes.
+Oculus is a desktop controller for LIFX lights, built with Tauri, Svelte, and Rust. It provides a sleek, modern interface for managing your smart lights and activating scenes.
 
 ## Table of Contents
 
@@ -18,18 +18,17 @@ Oculus is a desktop controller for LIFX lights, built with Tauri, Svelte, and Ru
 - [Building for Production](#building-for-production)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Features
 
-- 🎨 **Glassmorphic UI**: A stunning, dark-mode interface with dynamic lighting effects and frosted glass elements.
+- 🎨 **Glassmorphic UI**: A dark-mode interface with dynamic lighting effects and frosted glass elements.
 - 🎛️ **Interactive Dashboard**:
   - **Global Control**: Master switch to toggle all lights instantly.
   - **Live Status**: "Mini Orbs" on each card show real-time color and brightness.
   - **Offline Detection**: Visual indicators for offline lights with disabled controls.
   - **Instant Navigation**: Smart caching for zero-latency page transitions.
-  - **Rich Scenes**: Activate your favorite scenes with one click.
-- 💡 **Deep Light Control**:
+  - **Scenes**: Activate your favorite scenes with one click.
+- 💡 **Light Control**:
   - **Dynamic Visualization**: A central orb pulses with the light's actual color.
   - **Precision Tools**: Fine-tune Hue, Saturation, Brightness, and Kelvin with custom sliders.
 - 🔒 **Secure Setup & Settings**:
@@ -95,8 +94,3 @@ Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTIN
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- Inspired by the architectural design of the World Trade Center Oculus.
-- Built with the amazing [Tauri](https://tauri.app/) framework.
