@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-`tauri-applight-effects` is a desktop application built with Tauri v2, SvelteKit, and Rust to control LIFX smart lights. It allows users to view lights, toggle power, change states, and activate scenes.
+`Oculus` is a desktop controller for LIFX lights, built with Tauri, Svelte, and Rust. It allows users to view lights, toggle power, change states, and activate scenes.
 
 ## Tech Stack
 
@@ -32,7 +32,7 @@
 - **Install Dependencies**: `bun install`
 - **Run Development Server**: `bun tauri dev`
 - **Build for Production**: `bun tauri build`
-- **Check Types**: `bun run check`
+- **Check Types**: `bun check`
 
 ## Architecture
 
