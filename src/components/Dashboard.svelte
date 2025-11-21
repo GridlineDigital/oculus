@@ -8,13 +8,22 @@
 
     // Derived state for master toggle
     let anyLightsOn = $derived(lightState.lights.some(l => l.power === 'on'));
+    let pollInterval: ReturnType<typeof setInterval>;
+
+    function startPolling() {
+        clearInterval(pollInterval);
+        pollInterval = setInterval(() => lightState.refresh(), 5000);
+    }
 
     async function fetchData() {
         // Trigger background refresh for lights and scenes
-        lightState.refresh();
+        await lightState.refresh();
     }
 
     async function handleMasterToggle() {
+        // Pause polling to prevent stale data overwrite
+        clearInterval(pollInterval);
+
         const targetPower = anyLightsOn ? 'off' : 'on';
         
         // Optimistic update
@@ -29,14 +38,17 @@
         } catch (e) {
             console.error("Master toggle failed:", e);
             lightState.refresh(); // Revert on error
+        } finally {
+            // Restart polling after a delay to allow API to catch up
+            // We wait 2s before starting the 5s interval, giving 7s total buffer
+            setTimeout(startPolling, 2000);
         }
     }
 
     onMount(() => {
         fetchData();
-        // Poll for updates every 5 seconds for snappier feel
-        const interval = setInterval(() => lightState.refresh(), 5000);
-        return () => clearInterval(interval);
+        startPolling();
+        return () => clearInterval(pollInterval);
     });
 </script>
 
