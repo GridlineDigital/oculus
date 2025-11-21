@@ -80,7 +80,10 @@ pub fn run() {
             let menu = Menu::with_items(app, &[&show_i, &quit_i])?;
 
             let _ = TrayIconBuilder::new()
-                .icon(app.default_window_icon().unwrap().clone())
+                .icon(app.default_window_icon().unwrap().clone()) // Fallback to app icon for now as loading from path requires more setup
+                // To use the specific tray icon, we would need to bundle it or include_bytes!
+                // For simplicity and robustness, let's stick to the default icon which is now the lightbulb
+                // If the user specifically wants the monochrome one, we can swap it in the build process or use include_bytes
                 .menu(&menu)
                 .on_menu_event(|app, event| match event.id().as_ref() {
                     "quit" => {

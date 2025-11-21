@@ -219,7 +219,11 @@ impl LifxState {
                 *t = Some(token.clone());
                 Ok(token)
             }
-            Err(_) => Err("API token not found. Please go to Settings to configure it.".into()),
+            Err(e) => Err(format!(
+                "API token error: {}. Please go to Settings to configure it.",
+                e
+            )
+            .into()),
         }
     }
 }
